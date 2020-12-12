@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.barberapp">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".QueueConfirmationPage"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".BarberLoginPage"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".TimeSlotPage"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".MonthlyDiary"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".ServiceSelectionPage"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".ContactUsPage"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".ProfilePage"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".BarberChoicePage"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".ForgetPasswordPage"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".ExistPage"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".RegisterPage"
+
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:background="@drawable/loginbackground"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/barber_button"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/varela_round"
+        android:text="ספר"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.857" />
+
+    <ImageView
+        android:id="@+id/logobackg"
+        android:layout_width="357dp"
+        android:layout_height="170dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.085"
+        app:srcCompat="@drawable/namelogo" />
+
+    <ImageView
+        android:id="@+id/facebook"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:onClick="implicitIntentLiseners"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.974"
+        app:srcCompat="@drawable/facelogo" />
+
+    <ImageView
+        android:id="@+id/instegram"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:onClick="implicitIntentLiseners"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.354"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/logobackg"
+        app:layout_constraintVertical_bias="0.975"
+        app:srcCompat="@drawable/istalogo" />
+
+    <ImageView
+        android:id="@+id/whatsapp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:onClick="implicitIntentLiseners"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.664"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        app:srcCompat="@drawable/whatslogo" />
+
+    <Button
+        android:id="@+id/b_new_c"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/varela_round"
+        android:text="לקוח חדש"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.456" />
+
+    <Button
+        android:id="@+id/b_exist_c"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/varela_round"
+        android:text="לקוח קיים"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.588" />
+
+    <ImageView
+        android:id="@+id/maps"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:onClick="implicitIntentLiseners"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        app:srcCompat="@drawable/maps" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

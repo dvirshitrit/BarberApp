@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">#000000</item>
+    <item name="colorAccent">#2597CA</item>
+
+</style>
+    <style name="buttonStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/varela_round</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:background">@drawable/white_button</item>
+
+    </style>
+
+</resources>

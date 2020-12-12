@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/secondpagebackground"
+    android:layoutDirection="ltr"
+    android:layout_height="match_parent"
+    tools:context=".RegisterPage">
+
+
+    <EditText
+        android:id="@+id/enter_name"
+        android:layout_width="250dp"
+        android:layout_height="50sp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="הכנס שם מלא"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.465" />
+
+    <EditText
+        android:id="@+id/enter_phone"
+        android:layout_width="250dp"
+        android:layout_height="50sp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="הכנס מספר נייד"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_name"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/enter_email"
+        android:layout_width="250dp"
+        android:layout_height="50sp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="81dp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="הכנס מייל"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_password2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/enter_password2"
+        android:layout_width="250dp"
+        android:layout_height="50sp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="81dp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="הכנס סיסמה"
+        android:inputType="textPassword"
+        android:textColorHint="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_phone"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/send_data_to_firebase"
+        android:layout_width="162dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/varela_round"
+        android:text="הרשמה"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.91" />
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="47dp"
+        android:layout_height="48dp"
+        android:src="@drawable/back_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.015"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="161dp"
+        android:layout_height="49dp"
+        android:fontFamily="@font/varela_round"
+        android:text="ברוכים הבאים"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.112" />
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="333dp"
+        android:layout_height="37dp"
+        android:fontFamily="@font/varela_round"
+        android:text="אנו שמחים שהחלטת להצטרף אלינו."
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.201" />
+
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="333dp"
+        android:layout_height="37dp"
+        android:fontFamily="@font/varela_round"
+        android:text="לפניך מספר פרטים למילוי"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.253" />
+
+    <TextView
+        android:id="@+id/title4"
+        android:layout_width="333dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/varela_round"
+        android:text="כדי שנוכל להעניק לך שירות איכותי ויעיל."
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.306" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
